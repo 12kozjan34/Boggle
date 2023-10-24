@@ -1,0 +1,10 @@
+.clicked{
+    -fx-background-color: blue;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-padding: 10px;
+}
+
+.notClicked {
+    -fx-background-color: none;
+}

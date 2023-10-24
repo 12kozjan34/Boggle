@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="600.0" stylesheets="@Style/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.kozjan.demo.Controllers.GameController">
+   <children>
+      <Line endX="-100.0" endY="347.0" layoutX="186.0" layoutY="126.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="347.0" layoutX="614.0" layoutY="126.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="-110.0" endY="337.5" layoutX="196.0" layoutY="136.0" startX="317.0" startY="337.5" strokeWidth="2.0" />
+      <Line endX="-110.0" endY="337.5" layoutX="196.0" layoutY="-212.0" startX="317.0" startY="337.5" strokeWidth="2.0" />
+      <Line endX="327.0" layoutX="186.0" layoutY="213.0" startX="-100.0" />
+      <Line endX="327.0" layoutX="186.0" layoutY="299.0" startX="-100.0" />
+      <Line endX="327.0" layoutX="186.0" layoutY="389.0" startX="-100.0" />
+      <Line endX="-59.0" endY="309.0" layoutX="249.0" layoutY="164.0" startX="-59.0" startY="-37.5" />
+      <Line endX="-59.0" endY="309.0" layoutX="358.0" layoutY="164.0" startX="-59.0" startY="-37.5" />
+      <Line endX="-59.0" endY="309.0" layoutX="464.0" layoutY="164.0" startX="-59.0" startY="-37.5" />
+      <Label fx:id="one" layoutX="112.0" layoutY="153.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="two" layoutX="221.0" layoutY="153.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="three" layoutX="330.0" layoutY="153.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="four" layoutX="438.0" layoutY="153.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="five" layoutX="114.0" layoutY="241.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="six" layoutX="223.0" layoutY="241.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="seven" layoutX="332.0" layoutY="241.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="eight" layoutX="440.0" layoutY="241.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nine" layoutX="114.0" layoutY="329.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ten" layoutX="223.0" layoutY="329.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="eleven" layoutX="332.0" layoutY="329.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="twelve" layoutX="440.0" layoutY="329.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="thirteen" layoutX="114.0" layoutY="418.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fourteen" layoutX="223.0" layoutY="418.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fifteen" layoutX="332.0" layoutY="418.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sixteen" layoutX="440.0" layoutY="418.0" onMouseClicked="#letterClicked" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameMessage" layoutX="285.0" layoutY="506.0" text="Label" textFill="RED" />
+      <Label layoutX="260.0" layoutY="38.0" text="Boggle">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTimer" layoutX="515.0" layoutY="19.0" text="Label">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="536.0" text="Answers:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvWords" layoutX="90.0" layoutY="564.0" prefHeight="144.0" prefWidth="241.0">
+        <columns>
+          <TableColumn fx:id="tcWord" prefWidth="75.0" text="Word" />
+          <TableColumn fx:id="tcPoints" prefWidth="75.0" text="Points" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="14.0" layoutY="39.0" text="Points:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPoints" layoutX="87.0" layoutY="38.0" text="Label">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Game">
+            <items>
+              <MenuItem fx:id="miNewGame" mnemonicParsing="false" onAction="#newGameClicked" text="New Game" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>
