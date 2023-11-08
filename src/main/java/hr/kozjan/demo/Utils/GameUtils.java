@@ -13,9 +13,12 @@ import javafx.util.Duration;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Timer;
 
 public class GameUtils {
+    public static final Integer NUM_ROWS = 4;
+    public static final Integer NUM_COL = 4;
 
     public static void paintLetter(Label clickedLetter, int clickCounter) {
         if (clickCounter > 1) {
@@ -101,23 +104,23 @@ public class GameUtils {
     }
 
     private static Timeline timer;
-    private static int remainingTime;
+    private static int time;
 
-    public static void startTimer(Label lblTimer, ObservableList<WordsGuessed> obsWords, Label lblPoints) {
-        remainingTime = 180;
+    public static void startTimer(Label lblTimer, ObservableList<WordsGuessed> obsWords, Label lblPoints, int remainingTime) {
+        time = remainingTime;
         if (timer == null) {
             Timeline finalTimer = timer;
             timer = new Timeline(new KeyFrame(Duration.seconds(1), e -> {
-                if (remainingTime > 0) {
-                    remainingTime--;
-                    lblTimer.setText(Integer.toString(remainingTime));
+                if (time > 0) {
+                    time--;
+                    lblTimer.setText(Integer.toString(time));
                 } else {
                     stopTimer(finalTimer);
                     Platform.runLater(() -> {
                         MessageUtils.showDialog(Alert.AlertType.INFORMATION, "Game over", "Game is over " + "you have earned " + lblPoints.getText() + " points");
                     });
                     obsWords.clear();
-                    startTimer(lblTimer, obsWords, lblPoints);
+                    startTimer(lblTimer, obsWords, lblPoints, 180);
                 }
             }));
             timer.setCycleCount(Timeline.INDEFINITE);

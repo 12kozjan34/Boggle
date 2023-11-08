@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class WebUtils {
     public static boolean checkForWordTruth(String wordAttempt) {
         String url = "https://api.openai.com/v1/chat/completions";
-        String apiKey = "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";
+        String apiKey = "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";
         String model = "gpt-3.5-turbo";
 
         try {

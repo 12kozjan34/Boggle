@@ -142,8 +142,15 @@
           <Menu mnemonicParsing="false" text="Game">
             <items>
               <MenuItem fx:id="miNewGame" mnemonicParsing="false" onAction="#newGameClicked" text="New Game" />
+                  <MenuItem mnemonicParsing="false" onAction="#save" text="Save Game" />
+                  <MenuItem mnemonicParsing="false" onAction="#load" text="Load Game" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Documentation">
+               <items>
+                  <MenuItem fx:id="miNewGame1" mnemonicParsing="false" onAction="#generateDocumentation" text="Generate Documentation" />
+               </items>
+            </Menu>
         </menus>
       </MenuBar>
    </children>
